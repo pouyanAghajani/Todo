@@ -14,7 +14,7 @@ const Photos = () => {
         );
         const data = await response.json();
         setPhotos(data);
-        setFlags(Array(data.length).fill(false)); // اصلاح: استفاده از طول داده‌های واکشی شده به جای طول photos
+        setFlags(Array(data.length).fill(false));
       } catch (error) {
         console.log('Error Fetching Photos', error);
       }
